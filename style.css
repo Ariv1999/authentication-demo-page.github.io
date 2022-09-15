@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+}
+.main-container{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: -20px;
+    padding:20px 15px;
+}
+.main-wrapper {
+    margin-top: 85px;
+}
+.registration-edit {
+    width: 700px;
+    margin: auto;
+}
+.input-area{
+    width: 550px;
+}
+.heading-height{
+    margin-top: 20px;
+}
+
+.text-area1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-area1 .para-meter{
+    width: 780px;
+}
+.text-area1 img{
+    width: 350px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.paragraph-area{
+    margin: auto;
+}
+.paragraph-heading{
+    font-size: 1.25rem;
+}
+#special-para{
+    margin-top: 100px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.image-container img{
+    width: 550px;
+    height: 300px;
+}
+.image-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.image-area img{
+    width: 95%;
+}
+
+.label-color{
+    color: white;
+}
+
+.form-heading{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#sign-up{
+    display: none;
+}
+#log-in{
+    display: none;
+}

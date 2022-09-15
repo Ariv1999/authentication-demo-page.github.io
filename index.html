@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Authentication App</title>
+  </head>
+
+  <body>
+    <!-- -----------------------------------------------Navigation bar------------------------------------------------ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="goToHomeSection()"
+          >Authentication App</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                onclick="goToHomeSection()"
+                id="home-link"
+                >Home</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="#"
+                onclick="goToSignUpSection()"
+                id="signup-link"
+                >SignUp</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                aria-current="page"
+                onclick="goToLogInSection()"
+                id="login-link"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- -------------------------------------------------Blog area--------------------------------------------------- -->
+
+    <div class="main-container" id="home">
+      <h1 class="display-4 heading-height">Authentication App</h1>
+      <div class="text-area1">
+        <p class="lead para-meter">
+          Authentication is the process of determining whether someone or
+          something is, in fact, who or what it says it is. Authentication
+          technology provides access control for systems by checking to see if a
+          user's credentials match the credentials in a database of authorized
+          users or in a data authentication server. In doing this,
+          authentication assures secure systems, secure processes and enterprise
+          information security.
+        </p>
+        <img src="si-advanced-authentication-feature.webp" alt="first_image" />
+      </div>
+      <hr />
+
+      <!-- ------------------------------paragraph-area 1----------------------------------- -->
+
+      <div class="paragraph-area">
+        <p class="paragraph-heading">
+          There are different types of authentication systems which are: –
+        </p>
+        <p class="lead">
+          <strong> 1. Single-Factor authentication: –</strong> This was the
+          first method of security that was developed. On this authentication
+          system, the user has to enter the username and the password to confirm
+          whether that user is logging in or not. Now if the username or
+          password is wrong, then the user will not be allowed to log in or
+          access the system.
+        </p>
+        <p class="paragraph-heading">
+          The advantage of the Multi-Factor Authentication System are: –
+        </p>
+        <ul>
+          <li class="lead">No risk of security.</li>
+          <li class="lead">No information could get stolen.</li>
+          <li class="lead">No risk of any key-logger activity.</li>
+          <li class="lead">No risk of any data getting captured.</li>
+        </ul>
+        <p class="paragraph-heading">
+          The disadvantage of the Single-Factor Authentication System: –
+        </p>
+        <ul>
+          <li class="lead">
+            It is not at all password secure. It will depend on the strength of
+            the password entered by the user.
+          </li>
+          <li class="lead">
+            The protection level in Single-Factor Authentication is much low.
+          </li>
+        </ul>
+      </div>
+
+      <!-- ---------------------------------center-image1----------------------------------- -->
+      <div class="image-container">
+        <img
+          src="User-Authentication_-Understanding-the-Basics-Top-Tips.jpg"
+          alt="tech-image"
+        />
+      </div>
+
+      <!-- ---------------------------------paragraph-area 2-------------------------------- -->
+
+      <div class="paragraph-area">
+        <p class="lead">
+          <strong> 2. Two-factor Authentication: –</strong> In this
+          authentication system, the user has to give a username, password, and
+          other information. There are various types of authentication systems
+          that are used by the user for securing the system. Some of them are: –
+          wireless tokens and virtual tokens. OTP and more.
+        </p>
+        <p class="paragraph-heading">
+          Advantages of the Two-Factor Authentication System: -
+        </p>
+        <ul>
+          <li class="lead">
+            The Two-Factor Authentication System provides better security than
+            the Single-factor Authentication system.
+          </li>
+          <li class="lead">
+            The productivity and flexibility increase in the two-factor
+            authentication system.
+          </li>
+          <li class="lead">
+            Two-Factor Authentication prevents the loss of trust.
+          </li>
+        </ul>
+        <p class="paragraph-heading">
+          Disadvantages of Two-Factor Authentication System: –
+        </p>
+        <ul>
+          <li class="lead">It is time-consuming.</li>
+        </ul>
+      </div>
+
+      <!-- ---------------------------------center-image2----------------------------------- -->
+
+      <div class="image-container">
+        <img src="iStock-1175502114.png" alt="tech-image" />
+      </div>
+
+      <!-- ---------------------------------Paragraph-area3--------------------------------- -->
+
+      <div class="paragraph-area">
+        <p class="lead">
+          <strong> 3. Multi-Factor authentication system: –</strong> In this
+          type of authentication, more than one factor of authentication is
+          needed. This gives better security to the user. Any type of keylogger
+          or phishing attack will not be possible in a Multi-Factor
+          Authentication system. This assures the user, that the information
+          will not get stolen from them.
+        </p>
+        <p class="paragraph-heading">
+          Advantages of the Two-Factor Authentication System: -
+        </p>
+        <ul>
+          <li class="lead">
+            The Two-Factor Authentication System provides better security than
+            the Single-factor Authentication system.
+          </li>
+          <li class="lead">
+            The productivity and flexibility increase in the two-factor
+            authentication system.
+          </li>
+          <li class="lead">
+            Two-Factor Authentication prevents the loss of trust.
+          </li>
+        </ul>
+        <p class="paragraph-heading">
+          The disadvantage of the Multi-Factor Authentication System are: –
+        </p>
+        <ul>
+          <li class="lead">It is time-consuming.</li>
+          <li class="lead">
+            it can rely on third parties. The main objective of authentication
+            is to allow authorized users to access the computer and to deny
+            access to unauthorized users. Operating Systems generally
+            identify/authenticates users using the following 3 ways: Passwords,
+            Physical identification, and Biometrics. These are explained as
+            following below.
+            <ol>
+              <li class="lead">
+                <strong>Passwords:</strong> Password verification is the most
+                popular and commonly used authentication technique. A password
+                is a secret text that is supposed to be known only to a user. In
+                a password-based system, each user is assigned a valid username
+                and password by the system administrator. The system stores all
+                usernames and Passwords. When a user logs in, their user name
+                and password are verified by comparing them with the stored
+                login name and password. If the contents are the same then the
+                user is allowed to access the system otherwise it is rejected.
+              </li>
+              <li class="lead">
+                <strong>Physical Identification:</strong> This technique
+                includes machine-readable badges(symbols), cards, or smart
+                cards. In some companies, badges are required for employees to
+                gain access to the organization’s gate. In many systems,
+                identification is combined with the use of a password i.e the
+                user must insert the card and then supply his /her password.
+                This kind of authentication is commonly used with ATMs. Smart
+                cards can enhance this scheme by keeping the user password
+                within the card itself. This allows authentication without the
+                storage of passwords in the computer system. The loss of such a
+                card can be dangerous.
+              </li>
+              <li class="lead">
+                <strong>Biometrics:</strong> This method of authentication is
+                based on the unique biological characteristics of each user such
+                as fingerprints, voice or face recognition, signatures, and
+                eyes.
+              </li>
+              <li class="lead">
+                A scanner or other devices to gather the necessary data about
+                the user.
+              </li>
+              <li class="lead">
+                Software to convert the data into a form that can be compared
+                and stored.
+              </li>
+              <li class="lead">
+                A database that stores information for all authorized users.
+              </li>
+              <li class="lead">
+                <strong>Facial Characteristics –</strong> Humans are
+                differentiated on the basis of facial characteristics such as
+                eyes, nose, lips, eyebrows, and chin shape.
+              </li>
+              <li class="lead">
+                <strong>Fingerprints –</strong> Fingerprints are believed to be
+                unique across the entire human population.
+              </li>
+              <li class="lead">
+                <strong>Hand Geometry –</strong> Hand geometry systems identify
+                features of the hand that includes the shape, length, and width
+                of fingers.
+              </li>
+              <li class="lead">
+                <strong>Retinal pattern –</strong> It is concerned with the
+                detailed structure of the eye.
+              </li>
+              <li class="lead">
+                <strong>Signature –</strong> Every individual has a unique style
+                of handwriting, and this feature is reflected in the signatures
+                of a person.
+              </li>
+              <li class="lead">
+                <strong>Voice –</strong> This method records the frequency
+                pattern of the voice of an individual speaker.
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+      <hr />
+
+      <!-- -------------------------------image-information-area------------------------------ -->
+
+      <div class="display-6">
+        Top 10 Trusted Authentication Mathods are bellow: -
+      </div>
+      <div class="image-area">
+        <img
+          src="OneSpan-Infographic-10-Trusted-Authentication-Methods.png"
+          alt="tech-image"
+        />
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------signUp Option------------------------------------------------ -->
+
+    <div class="container main-wrapper" id="sign-up">
+      <div class="display-6 form-heading">Sign-Up</div>
+      <form class="row g-3 form-align">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label label-color"
+            >First Name</label
+          >
+          <input type="text" class="form-control" id="firstName" />
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label label-color"
+            >Last Name</label
+          >
+          <input type="text" class="form-control" id="lastName" />
+        </div>
+        <div class="col-md-6">
+          <label for="emails" class="form-label label-color"
+            >Email</label
+          >
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="email" class="form-control" id="emails" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="phoneNo" class="form-label label-color"
+            >Contact No</label
+          >
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">+91</span>
+            <input type="text" class="form-control" id="phoneNo" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="passwords" class="form-label label-color"
+            >Enter Password</label
+          >
+          <input type="password" class="form-control" id="passwords" />
+        </div>
+        <div class="col-md-6">
+          <label for="passwordConform" class="form-label label-color"
+            >Confirm Password</label
+          >
+          <input type="password" class="form-control" id="passwordConform" />
+          <div class="invalid-feedback" id="confirm-password-valid">
+            not match the Password
+          </div>
+        </div>
+        <div class="col-12 align-items-center">
+          <button class="btn btn-dark" type="button" onclick="signUp()">SignUp</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- --------------------------------------------------Login Option--------------------------------------------- -->
+    <div class="container main-wrapper" id="log-in">
+      <div class="display-6 form-heading">Log-In</div>
+      <form class="row g-3">
+        <div class="col-md-12">
+          <label for="login-Email" class="form-label label-color"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="form-control input-area"
+            id="login-Email"
+          />
+        </div>
+        <div class="col-md-12">
+          <label for="login-psw" class="form-label input-area label-color"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control input-area"
+            id="login-psw"
+          />
+        </div>
+        <div class="col-12">
+          <button
+            class="btn btn-dark"
+            style="margin-bottom: 50px"
+            type="button"
+            onclick="logIn()"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
