@@ -37,8 +37,8 @@ const goToLogInSection = () => {
   document.getElementById("signup-link").classList.remove("active");
 }
 
-let email = ''
-let psw = ''
+let DB_Authentication = []
+
 const signUp = () =>{
     let check = false
     const firstName = document.getElementById('firstName').value
@@ -58,15 +58,22 @@ const signUp = () =>{
     }
     if(check == false){
         alert('Data Stored !!')
-        email = emails
-        psw = passwords
+        let obj = {
+            firstName,
+            lastName,
+            emails,
+            phoneNo,
+            passwords
+        }
+        DB_Authentication.push(obj)
+        console.log(DB_Authentication)
     }
 }
 
 const logIn = () => {
-    const emails = document.getElementById('login-Email').value
+    const email = document.getElementById('login-Email').value
     const password = document.getElementById('login-psw').value
-    if(emails === email && psw === password){
+    if(DB_Authentication.find(data => data.emails === email && data.passwords === password)){
         alert('data exists')
     }else{
         alert('try again!, Data not exist')
