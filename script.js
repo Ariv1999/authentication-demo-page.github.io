@@ -1,6 +1,6 @@
-const signup = document.getElementById("sign-up");
-const home = document.getElementById("home");
-const login = document.getElementById("log-in");
+const signup = document.getElementById("signup-link");
+const home = document.getElementById("home-link");
+const login = document.getElementById("login-link");
 
 const goToHomeSection = () => {
   console.log("home");
